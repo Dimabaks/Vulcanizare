@@ -1,0 +1,20 @@
+@use 'block/header' as *;
+@use 'block/promo' as *;
+@use 'block/contacte' as *;
+@use 'block/desprenoi' as *;
+@use 'block/footer' as *;
+@use 'block/programare' as *;
+@use 'block/services' as *;
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}

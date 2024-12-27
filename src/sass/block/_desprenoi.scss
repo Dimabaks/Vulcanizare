@@ -1,0 +1,24 @@
+.info {
+    margin-top: 30px;
+    margin-bottom: 150px;
+    &__title {
+        background-color: orange;
+        padding: 15px 120px;
+        width: 295px;
+    }
+    &__content {
+        display: flex;
+        img {
+            width: 50%;
+            height: 350px;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+    }
+    .text__info {
+        margin-top: 30px;
+        font-size: 16px;
+        width: 40%;
+        font-weight: 600;
+    }
+}

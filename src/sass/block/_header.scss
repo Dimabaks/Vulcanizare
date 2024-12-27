@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    padding: 10px 40px;
+    &__link {
+        ul {
+            display: flex;
+        }
+    }
+    &__btn {
+        background-color: rgb(9, 171, 231);
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        height: 60px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+    .link__item {
+        list-style-type: none;
+        padding: 0px 25px;
+        font-size: 16px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: red;
+                background-color: green;
+            }
+        }
+    }
+    img {
+        height: 40px;
+        width: 40px;
+    }
+}
