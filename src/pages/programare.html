@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" type="image/x-icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.min.css" />
     <title>Despre Noi</title>
   </head>
   <body>
     <header class="header">
-      <a href="index.html"
+      <a href="../index.html"
         ><img src="../icons/image_logo.png" alt="image_logo"
       /></a>
       <div class="header__link">
@@ -27,23 +28,49 @@
       <div class="container">
         <div class="programming__item">
           <h1 class="programming__title">PROGRAMARE ONLINE</h1>
-          <form class="programming__form">
+          <form class="programming__form" action="../mail.php">
             <label for="" class="label__name"
               ><strong>Numele dvs</strong
-              ><input type="text" class="programming__name"
+              ><input
+                name="name"
+                required
+                type="text"
+                class="programming__name"
             /></label>
             <label for="" class="label__number"
               ><strong>Nr.telefon</strong
-              ><input type="text" class="programming__number"
+              ><input
+                name="phone"
+                required
+                type="text"
+                class="programming__number"
             /></label>
+            <div class="btn__container">
+              <button
+                class="button_submit"
+                type="submit"
+                data-modal="consultation"
+              >
+                Expediaza cererea
+              </button>
+              <button>Suna acum</button>
+            </div>
           </form>
-          <div class="btn__container">
-            <a href=""><button>Expediaza cererea</button></a>
-            <a href=""><button>Suna acum</button></a>
-          </div>
         </div>
       </div>
     </section>
-    <script src="js/script.js"></script>
+
+    <div class="overlay">
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__descr">
+          Наш менеджер свяжется с вами в ближайшее время!
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
